@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+/frontend/dist/
+/frontend/build/
+dist/
+
+# OS and Editor files
+.DS_Store
+.vscode/
+.idea/
