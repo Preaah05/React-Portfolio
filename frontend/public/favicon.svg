@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Background matching the site's dark surface -->
+  <rect width="100" height="100" rx="24" fill="#0a0a0a" />
+  
+  <!-- Cursive, italic, normal-weight lowercase p in dark green -->
+  <text x="50" y="70" font-family="cursive, 'Brush Script MT', 'Segoe Script', sans-serif" font-style="italic" font-weight="normal" font-size="70" fill="darkgreen" text-anchor="middle">p</text>
+</svg>
