@@ -8,7 +8,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus('sending');
     try {
-      const API_URL = import.meta.env.VITE_API_URL || 'https://react-portfolio-9b05.onrender.com';
+      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
       const res = await fetch(`${API_URL}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -37,8 +37,8 @@ export default function Contact() {
         </p>
 
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
-            <div style={{ flex: '1 1 calc(50% - 0.75rem)' }}>
+          <div className="contact-inputs">
+            <div className="contact-input-wrapper">
               <input 
                 type="text" 
                 name="name" 
@@ -51,7 +51,7 @@ export default function Contact() {
                 onBlur={(e) => e.target.style.borderColor = 'var(--glass-border)'}
               />
             </div>
-            <div style={{ flex: '1 1 calc(50% - 0.75rem)' }}>
+            <div className="contact-input-wrapper">
               <input 
                 type="email" 
                 name="email" 

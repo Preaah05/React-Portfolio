@@ -1,11 +1,11 @@
 export default function Hero() {
   return (
-    <section id="home" className="container" style={{ textAlign: 'center', paddingTop: '15rem', paddingBottom: '10rem' }}>
+    <section id="home" className="container hero-section">
       <div className="reveal">
         <div style={{ display: 'inline-block', padding: '0.4rem 1rem', background: 'var(--glass-bg)', border: '1px solid var(--glass-border)', borderRadius: '20px', marginBottom: '2rem', fontSize: '0.875rem', color: 'var(--accent-primary)', fontWeight: 600, letterSpacing: '1px', textTransform: 'uppercase' }}>
           Open to work
         </div>
-        <h1 style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', letterSpacing: '-0.02em', marginBottom: '1.5rem', lineHeight: 1.1 }}>
+        <h1 className="hero-title">
           Hi, I'm <span className="text-gradient-accent">Priya</span>
         </h1>
         <p style={{ color: 'var(--text-muted)', fontSize: '1.25rem', maxWidth: '800px', margin: '0 auto 2rem auto', lineHeight: 1.8 }}>
